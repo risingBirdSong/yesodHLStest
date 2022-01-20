@@ -1,0 +1,217 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           yesodFromScratch
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/yesodFromScratch#readme>
+homepage:       https://github.com/githubuser/yesodFromScratch#readme
+bug-reports:    https://github.com/githubuser/yesodFromScratch/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2022 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/yesodFromScratch
+
+library
+  exposed-modules:
+      Application
+      Foundation
+      Handler.Stuff
+      Import
+      Import.NoFoundation
+      Lib
+      Model
+      Settings
+  other-modules:
+      Paths_yesodFromScratch
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson
+    , aeson-casing
+    , aeson-qq
+    , aeson-typescript
+    , base
+    , bytestring
+    , case-insensitive
+    , classy-prelude
+    , classy-prelude-conduit
+    , classy-prelude-yesod
+    , conduit
+    , containers
+    , cookie
+    , data-default
+    , directory
+    , esqueleto
+    , fakedata
+    , fast-logger
+    , file-embed
+    , foreign-store
+    , http-client-tls
+    , http-conduit
+    , lens
+    , monad-control
+    , monad-logger
+    , monad-validate
+    , mtl
+    , persistent
+    , persistent-postgresql
+    , persistent-template
+    , random
+    , safe
+    , template-haskell
+    , text
+    , time
+    , transformers
+    , unordered-containers
+    , uuid
+    , validation
+    , vector
+    , wai
+    , wai-cors
+    , wai-extra
+    , wai-logger
+    , warp
+    , yaml
+    , yesod
+    , yesod-auth
+    , yesod-core
+    , yesod-form
+    , yesod-static
+  default-language: Haskell2010
+
+executable yesodFromScratch-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_yesodFromScratch
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , aeson-casing
+    , aeson-qq
+    , aeson-typescript
+    , base
+    , bytestring
+    , case-insensitive
+    , classy-prelude
+    , classy-prelude-conduit
+    , classy-prelude-yesod
+    , conduit
+    , containers
+    , cookie
+    , data-default
+    , directory
+    , esqueleto
+    , fakedata
+    , fast-logger
+    , file-embed
+    , foreign-store
+    , http-client-tls
+    , http-conduit
+    , lens
+    , monad-control
+    , monad-logger
+    , monad-validate
+    , mtl
+    , persistent
+    , persistent-postgresql
+    , persistent-template
+    , random
+    , safe
+    , template-haskell
+    , text
+    , time
+    , transformers
+    , unordered-containers
+    , uuid
+    , validation
+    , vector
+    , wai
+    , wai-cors
+    , wai-extra
+    , wai-logger
+    , warp
+    , yaml
+    , yesod
+    , yesod-auth
+    , yesod-core
+    , yesod-form
+    , yesod-static
+    , yesodFromScratch
+  default-language: Haskell2010
+
+test-suite yesodFromScratch-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_yesodFromScratch
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , aeson-casing
+    , aeson-qq
+    , aeson-typescript
+    , base
+    , bytestring
+    , case-insensitive
+    , classy-prelude
+    , classy-prelude-conduit
+    , classy-prelude-yesod
+    , conduit
+    , containers
+    , cookie
+    , data-default
+    , directory
+    , esqueleto
+    , fakedata
+    , fast-logger
+    , file-embed
+    , foreign-store
+    , http-client-tls
+    , http-conduit
+    , lens
+    , monad-control
+    , monad-logger
+    , monad-validate
+    , mtl
+    , persistent
+    , persistent-postgresql
+    , persistent-template
+    , random
+    , safe
+    , template-haskell
+    , text
+    , time
+    , transformers
+    , unordered-containers
+    , uuid
+    , validation
+    , vector
+    , wai
+    , wai-cors
+    , wai-extra
+    , wai-logger
+    , warp
+    , yaml
+    , yesod
+    , yesod-auth
+    , yesod-core
+    , yesod-form
+    , yesod-static
+    , yesodFromScratch
+  default-language: Haskell2010
